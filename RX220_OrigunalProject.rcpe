@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="CubeSuite+" Version="V8.06.00  [03 Jun 2021]" />
+  <Placeholders>
+    <PlaceholderPrefix>%</PlaceholderPrefix>
+    <PlaceholderPostfix>%</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="RX220_OrigunalProject" Type="Application">
+    <Files>
+      <Path>RX220_OrigunalProject.c</Path>
+      <Path>iodefine.h</Path>
+      <Category Name="StertUp">
+        <Path>dbsct.c</Path>
+        <Path>intprg.c</Path>
+        <Path>resetprg.c</Path>
+        <Path>sbrk.c</Path>
+        <Path>vecttbl.c</Path>
+        <Path>sbrk.h</Path>
+        <Path>stacksct.h</Path>
+        <Path>typedefine.h</Path>
+        <Path>vect.h</Path>
+      </Category>
+      <Category Name="Driver">
+        <Path>Dispenser.c</Path>
+        <Path>Dispenser.h</Path>
+        <Path>RS232C_signal.c</Path>
+        <Path>RS232C.h</Path>
+      </Category>
+      <Category Name="Farmware">
+        <Path>Hardware_Setup.c</Path>
+        <Path>Hardware_Setup.h</Path>
+        <Path>MTU_PWM.c</Path>
+        <Path>MTU_PWM.h</Path>
+        <Path>HC_SR04.c</Path>
+        <Path>HC_SR04.h</Path>
+        <Path>temperture.c</Path>
+        <Path>ADT7410_TempSencer.c</Path>
+      </Category>
+      <Category Name="signsls">
+        <Path>SCI1.c</Path>
+        <Path>SCI1.h</Path>
+        <Path>COM_str.h</Path>
+      </Category>
+      <Path>Timer.c</Path>
+      <Path>Timer.h</Path>
+    </Files>
+    <DebugOptions>
+      <ConnectSettings>
+        <MainClock>214748364000</MainClock>
+      </ConnectSettings>
+      <DebugToolSettings />
+    </DebugOptions>
+    <Device Series="RX">R5F52206BxFM</Device>
+    <BuildOptions Name="CC-RX" Version="V3.03.00">
+      <BuildMode Name="DefaultBuild" Active="True">
+        <GeneralOptions>
+          <SimultaneouslyBuild>false</SimultaneouslyBuild>
+        </GeneralOptions>
+        <CompileOptions>
+          <Option>-isa=rxv1</Option>
+          <Option>-nofpu</Option>
+          <Option>-lang=c</Option>
+          <Option>-include=.</Option>
+          <Option>-output=obj=%BuildModeName%\%FileLeaf%.obj</Option>
+          <Option>-debug</Option>
+          <Option>-g_line</Option>
+          <Option>-optimize=0</Option>
+          <Option>-nologo</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-isa=rxv1</Option>
+          <Option>-nofpu</Option>
+          <Option>-output=%BuildModeName%\%FileLeaf%.obj</Option>
+          <Option>-debug</Option>
+          <Option>-nologo</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-output=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-list=%BuildModeName%\%ProjectName%.map</Option>
+          <Option>-nooptimize</Option>
+          <Option>-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFFC0000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFFC0100,FIXEDVECT/0FFFFFFD0</Option>
+          <Option>-rom=D=R,D_1=R_1,D_2=R_2</Option>
+          <Option>-nologo</Option>
+          <Option>-end</Option>
+          <Option>-input=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.mot</Option>
+          <Option>-form=stype</Option>
+          <Option>-exit</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <Option>-isa=rxv1</Option>
+          <Option>-nofpu</Option>
+          <Option>-head=runtime,stdio,stdlib,string,new</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.lib</Option>
+          <Option>-optimize=0</Option>
+          <Option>-nologo</Option>
+          <GenerateMode>BuildOptionChanged</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>DefaultBuild\dbsct.obj</Path>
+          <Path>DefaultBuild\intprg.obj</Path>
+          <Path>DefaultBuild\resetprg.obj</Path>
+          <Path>DefaultBuild\RX220_OrigunalProject.obj</Path>
+          <Path>DefaultBuild\sbrk.obj</Path>
+          <Path>DefaultBuild\vecttbl.obj</Path>
+          <Path>DefaultBuild\Hardware_Setup.obj</Path>
+          <Path>DefaultBuild\MTU_PWM.obj</Path>
+          <Path>DefaultBuild\Timer.obj</Path>
+          <Path>DefaultBuild\HC_SR04.obj</Path>
+          <Path>DefaultBuild\Dispenser.obj</Path>
+          <Path>DefaultBuild\temperture.obj</Path>
+          <Path>DefaultBuild\ADT7410_TempSencer.obj</Path>
+          <Path>DefaultBuild\SCI1.obj</Path>
+          <Path>DefaultBuild\RS232C_signal.obj</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>.</IncludePathForC>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>

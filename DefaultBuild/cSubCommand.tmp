@@ -1,0 +1,13 @@
+-isa=rxv1
+-nofpu
+-MAKEUD="C:\Users\sp9e9\Desktop\組み込み\RX220 buckUp\RX220_OrigunalProject\DefaultBuild\"
+-include="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.03.00\include"
+-include="C:\Users\sp9e9\Desktop\組み込み\RX220 buckUp\RX220_OrigunalProject" 
+-lang=c
+-nomessage
+-output=obj
+-obj_path=""
+-debug
+-optimize=0
+-nologo
+-g_line 

@@ -1,0 +1,7 @@
+-MAKEUD=C:\Users\sp9e9\Desktop\組み込み\RX220 buckUp\RX220_OrigunalProject\DefaultBuild\\RX220_OrigunalProject_c.ud
+-input="RX220_OrigunalProject.abs"
+-form=stype
+-output="RX220_OrigunalProject.mot"
+-byte_count=10
+-nomessage
+-exit

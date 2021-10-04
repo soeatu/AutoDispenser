@@ -1,0 +1,8 @@
+-MAKEUD_LBG="C:\Users\sp9e9\Desktop\組み込み\RX220 buckUp\RX220_OrigunalProject\DefaultBuild\\RX220_OrigunalProject_lbg.ud"
+-isa=rxv1
+-nofpu
+-lang=c
+-head=runtime,stdio,stdlib,string,new
+-output="RX220_OrigunalProject.lib"
+-optimize=0
+-nologo

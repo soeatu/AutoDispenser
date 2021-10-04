@@ -1,0 +1,12 @@
+-MM
+-MP
+-isa=rxv1
+-nofpu
+-include="C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RX\V3.03.00\include"
+-include="C:\Users\sp9e9\Desktop\組み込み\RX220 buckUp\RX220_OrigunalProject" 
+-lang=c
+-nomessage
+-debug
+-optimize=0
+-nologo
+-g_line

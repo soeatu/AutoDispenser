@@ -1,0 +1,11 @@
+ŒŽ—j“ú, 9ŒŽ 13, 2021, 12:49:49
+
+<Compiler package version>
+Renesas_RXC: v3.03.00 -> Renesas_RXC: v3.03.00
+
+<IDE version>
+CubeSuite+: V8.06.00  [03 Jun 2021]
+
+<Moved to the User-defined option(DefaultBuild)>
+ (Compiler Options)
+-g_line
