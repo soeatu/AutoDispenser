@@ -2,7 +2,7 @@
 アルコールディスペンサ
 
 
-ターゲットボード target board
+ターゲットボード target board  
 RX220
 
 周辺装置
