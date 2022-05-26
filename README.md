@@ -1,4 +1,4 @@
-# AutoDispenser
+# AlcoholDispenser
 アルコールディスペンサ
 
 ターゲットボード
